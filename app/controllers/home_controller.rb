@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
 
   def index
+    puts "blah"
     gmail_username = ENV["gmail_username"]
     gmail_password = ENV["gmail_password"]
     tos_from = "alerts@thinkorswim.com"
@@ -40,6 +41,7 @@ class HomeController < ApplicationController
     end
     gmail.logout
     @trades.reverse!
+    puts "blahblah"
   end
 
 end
